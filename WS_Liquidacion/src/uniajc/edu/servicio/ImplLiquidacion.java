@@ -18,23 +18,12 @@ public class ImplLiquidacion implements Iliquidacion {
 
 	@Override
 	public String LiquidacionJson(int id) {
-
-		String respuesta = "";
 		LiquidacionDao LiqDAO = new LiquidacionDao();
-
 		Liquidacion liquidacion = LiqDAO.Liquidacion(id);
 		System.out.println("re: " + liquidacion);
-		Gson gson = new Gson();
-		final Gson gson1 = new Gson();
-
-	
-		
+		final Gson gson1 = new Gson();		
 		 String data = gson1.toJson(liquidacion);
-		 
-		 
-
 		return data;
-	
-	}
+		}
 
 }
