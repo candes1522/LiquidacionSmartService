@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ConnectionDB {
-	
+	//conexion
 	private String hostname;
 	private String port;
 	private String username;
