@@ -33,11 +33,11 @@
   <ns1:parameter name="className" value="org.apache.axis.Version"/>
  </ns1:service>
  <ns1:service name="WSLiquidacion" provider="java:RPC" style="wrapped" use="literal">
-  <ns3:operation name="liquidacion" qname="ns1:liquidacion" returnQName="ns1:liquidacionReturn" returnType="ns2:Liquidacion" soapAction="" xmlns:ns1="http://ws.edu.uniajc" xmlns:ns2="http://model.edu.uniajc" xmlns:ns3="http://xml.apache.org/axis/wsdd/">
-   <ns3:parameter qname="ns1:P_ID" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
-  </ns3:operation>
-  <ns1:operation name="liquidacionJson" qname="ns3:LiquidacionJson" returnQName="ns3:LiquidacionJsonReturn" returnType="xsd:string" soapAction="" xmlns:ns3="http://ws.edu.uniajc" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-   <ns1:parameter qname="ns3:P_ID" type="xsd:int"/>
+  <ns2:operation name="liquidacionJson" qname="ns1:LiquidacionJson" returnQName="ns1:LiquidacionJsonReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://ws.edu.uniajc" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
+   <ns2:parameter qname="ns1:P_ID" type="xsd:int"/>
+  </ns2:operation>
+  <ns1:operation name="liquidacion" qname="ns2:liquidacion" returnQName="ns2:liquidacionReturn" returnType="ns3:Liquidacion" soapAction="" xmlns:ns2="http://ws.edu.uniajc" xmlns:ns3="http://model.edu.uniajc">
+   <ns1:parameter qname="ns2:P_ID" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </ns1:operation>
   <ns1:parameter name="allowedMethods" value="liquidacionJson liquidacion"/>
   <ns1:parameter name="typeMappingVersion" value="1.2"/>

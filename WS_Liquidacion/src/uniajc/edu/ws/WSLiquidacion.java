@@ -3,7 +3,8 @@ package uniajc.edu.ws;
 import javax.jws.WebMethod;
 
 import uniajc.edu.model.Liquidacion;
-import uniajc.edu.servicio.ImplLiquidacion;;
+import uniajc.edu.servicio.ImplLiquidacion;
+import uniajc.edu.servicio.Iliquidacion;;
 
 public class WSLiquidacion {	
 	

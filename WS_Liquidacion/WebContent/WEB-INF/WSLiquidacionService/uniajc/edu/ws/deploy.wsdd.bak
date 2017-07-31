@@ -20,10 +20,10 @@
       <parameter name="className" value="uniajc.edu.ws.WSLiquidacionSoapBindingImpl"/>
       <parameter name="wsdlPortType" value="WSLiquidacion"/>
       <parameter name="typeMappingVersion" value="1.2"/>
-      <operation name="liquidacion" qname="operNS:liquidacion" xmlns:operNS="http://ws.edu.uniajc" returnQName="retNS:liquidacionReturn" xmlns:retNS="http://ws.edu.uniajc" returnType="rtns:Liquidacion" xmlns:rtns="http://model.edu.uniajc" soapAction="" >
+      <operation name="liquidacionJson" qname="operNS:LiquidacionJson" xmlns:operNS="http://ws.edu.uniajc" returnQName="retNS:LiquidacionJsonReturn" xmlns:retNS="http://ws.edu.uniajc" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
         <parameter qname="pns:P_ID" xmlns:pns="http://ws.edu.uniajc" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
       </operation>
-      <operation name="liquidacionJson" qname="operNS:LiquidacionJson" xmlns:operNS="http://ws.edu.uniajc" returnQName="retNS:LiquidacionJsonReturn" xmlns:retNS="http://ws.edu.uniajc" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      <operation name="liquidacion" qname="operNS:liquidacion" xmlns:operNS="http://ws.edu.uniajc" returnQName="retNS:liquidacionReturn" xmlns:retNS="http://ws.edu.uniajc" returnType="rtns:Liquidacion" xmlns:rtns="http://model.edu.uniajc" soapAction="" >
         <parameter qname="pns:P_ID" xmlns:pns="http://ws.edu.uniajc" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
       </operation>
       <parameter name="allowedMethods" value="liquidacionJson liquidacion"/>

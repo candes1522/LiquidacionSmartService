@@ -8,7 +8,6 @@ private String DOCUMENTO;
 private String NOMBRE;
 private String COD_PROG;
 private String PROGRAMA;
-private String FRANJA;
 private String CATEGORIA;
 private String SITUACION;
 private String ESTP_ID;
@@ -28,7 +27,7 @@ private String SEMESTRE;
 	}
 
 
-	public Liquidacion(String lIQU_ID, String dOCUMENTO, String nOMBRE, String cOD_PROG, String pROGRAMA, String fRANJA,
+	public Liquidacion(String lIQU_ID, String dOCUMENTO, String nOMBRE, String cOD_PROG, String pROGRAMA,
 			String cATEGORIA, String sITUACION, String eSTP_ID, String tOTAPAGAR, String dESCUENTO, String v_PAGADO,
 			String lIQU_ESTADO, String tIPO_LIQU, String mAAC_ESTADO, String pEUN_ID, String pEUN_MATRICULA,
 			String sEMESTRE) {
@@ -38,7 +37,6 @@ private String SEMESTRE;
 		NOMBRE = nOMBRE;
 		COD_PROG = cOD_PROG;
 		PROGRAMA = pROGRAMA;
-		FRANJA = fRANJA;
 		CATEGORIA = cATEGORIA;
 		SITUACION = sITUACION;
 		ESTP_ID = eSTP_ID;
@@ -104,14 +102,6 @@ private String SEMESTRE;
 	}
 
 
-	public String getFRANJA() {
-		return FRANJA;
-	}
-
-
-	public void setFRANJA(String fRANJA) {
-		FRANJA = fRANJA;
-	}
 
 
 	public String getCATEGORIA() {
