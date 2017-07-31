@@ -1,7 +1,7 @@
 package uniajc.edu.model;
 
 public class Liquidacion {
-
+//modelo
 
 private String LIQU_ID;
 private String DOCUMENTO;
